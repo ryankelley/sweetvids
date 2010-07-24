@@ -44,9 +44,6 @@
     <Reference Include="FubuMVC.UI">
       <HintPath>..\..\lib\FubuMVC\FubuMVC.UI.dll</HintPath>
     </Reference>
-    <Reference Include="HibernatingRhinos.Profiler.Appender">
-      <HintPath>..\..\..\..\fieldbook\lib\NHProf\HibernatingRhinos.Profiler.Appender.dll</HintPath>
-    </Reference>
     <Reference Include="HtmlTags">
       <HintPath>..\..\lib\FubuMVC\HtmlTags.dll</HintPath>
     </Reference>
@@ -70,6 +67,7 @@
   <ItemGroup>
     <Content Include="Actions\Videos\AddVideoForm.aspx" />
     <Content Include="Actions\Videos\Details.aspx" />
+    <Content Include="Actions\Videos\VideoControl.ascx" />
     <Content Include="Actions\Videos\Videos.aspx" />
     <Content Include="Content\css\960.css" />
     <Content Include="Content\css\reset.css" />
@@ -137,7 +135,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53634</DevelopmentServerPort>
+          <DevelopmentServerPort>49308</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

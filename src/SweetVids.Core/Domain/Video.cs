@@ -19,9 +19,9 @@ namespace SweetVids.Core.Domain
         [Required]
         public virtual string VideoType { get; set; }
 
-        public virtual IEnumerable<VideoComment> GetVideoComments()
+        public virtual IEnumerable<VideoComment> VideoComments
         {
-            return _videoComments;
+            get { return _videoComments; }
         }
 
         public virtual string GetYouTubeUrl()

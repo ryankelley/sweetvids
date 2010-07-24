@@ -24,18 +24,18 @@
                 <p class="description">
                     <%=Model.Video.Description %></p>
                 <ul class="comments">
-                    <% for (int i = 0; i < Model.Video.GetVideoComments().Count(); i++)
+                    <% for (int i = 0; i < Model.Video.VideoComments.Count(); i++)
                        { %>
                     <li class="<%= i%2 == 0 ? "even" : "odd" %> mod">
                         <div class="gravatar">
-                            <img src="http://www.gravatar.com/avatar/<%= Model.Video.GetVideoComments().ToList()[i].Email.ToGravatarHash() %>?d=monsterid&s=60"
+                            <img src="http://www.gravatar.com/avatar/<%= Model.Video.VideoComments.ToList()[i].Email.ToGravatarHash() %>?d=monsterid&s=60"
                                 alt="gravatar" />
                         </div>
                         <div class="comment">
                             <h3>
-                                <%= Model.Video.GetVideoComments().ToList()[i].Name %></h3>
+                                <%= Model.Video.VideoComments.ToList()[i].Name %></h3>
                             <p>
-                                <%=Model.Video.GetVideoComments().ToList()[i].Comment %>
+                                <%=Model.Video.VideoComments.ToList()[i].Comment %>
                             </p>
                         </div>
                         <div class="clear">

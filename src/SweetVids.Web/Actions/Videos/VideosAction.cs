@@ -89,6 +89,7 @@ namespace SweetVids.Web.Actions.Videos
         public int Page { get; set; }
     }
 
+    public class VideoControl : FubuControl<Video>{}
     public class Videos : FubuPage<ListVideosViewModel> { }
     public class Details : FubuPage<VideoViewModel> { }
 }

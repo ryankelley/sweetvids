@@ -36,9 +36,6 @@ namespace SweetVids.Web
                 .ForInputTypesOf<IRequestById>(call => call.RouteInputFor(request => request.Id));
                 
 
-
-
-
             this.StringConversions(x =>
                                        {
                                            
